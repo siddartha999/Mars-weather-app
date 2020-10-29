@@ -1,3 +1,6 @@
+The application is hosted at: https://mars-weather-7a8cb.web.app/
+Inspired by: https://www.youtube.com/watch?v=MDENx86nK4k&t=1419s
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

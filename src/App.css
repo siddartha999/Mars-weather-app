@@ -1,38 +1,92 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-bg-img {
+  background-image: url("./mars.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-info-panel {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  top: 10%;
+  left: 10%;
+  opacity: 0.5;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-info-panel-header {
+  height: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.App-info-panel-main-header {
+  color: bisque;
+  font-variant: all-petite-caps;
+  font-size: 1.5rem;
+}
+
+.App-info-panel-sub-header {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-info-panel-current-day-content {
+  color: wheat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-info-panel-previous-days-content {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.App-info-panel-info-box {
+  background-color: dimgray;
+  margin: 0.25rem;
+  min-width: 6rem;
+}
+
+.App-info-panel-content {
+  padding: 0.5rem;
+}
+
+.App-info-panel-info-box-top-content {
+  border-bottom: 5px solid;
+}
+
+.Sol {
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.App-info-box-temp {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.App-temperature-unit-toggle-wrapper {
+  background-color: beige;
+  width: 8rem;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
